@@ -49,7 +49,9 @@ h4 {
 }
 
 h5 {
-
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: 1px;
 }
 
 p {
@@ -59,31 +61,104 @@ p {
 /* FRAMEWORK
 ================================================== */
 
-#header {
+/* SPLASH PAGE
+================================================== */
+#headerPgOne {
 	text-align:center;
+    margin-top:100px;
 }
 
-#main {
+#mainPgOne {
 	text-align:center;
+    margin-top:-50px;
+}
+
+/* SURVEY
+================================================== */
+
+#topPgTwo {
+    padding:5px;
+    background-color:#000;
+}
+
+#topPgTwo h5 {
+    margin-top:-2px;
+    margin-left:20px;
+}
+
+#topPgTwo ul {
+    list-style-type: inline;
+    margin-top: -15px;
+    text-align: center;
+}
+
+#topPgTwo ul li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px; 
+    color: #fff;
+}
+
+#topPgTwo ul li a {
+    text-decoration: none;
+}
+
+#topPgTwo a {
+    color: #fff;
+    transition: all .5s ease 0;
+}
+
+#topPgTwo a:hover {
+    color: #000;
+    background-color: #fff;
+    padding:5px;
+    transition: all .5s ease 0;
+}
+
+.question h3 {
+    margin-top:-10px;
+}
+
+.question {
+    height:auto;
+    margin-top:30px;
+    margin-bottom:30px;
+    padding:20px;
+    background-color: #000;
 }
 
 /* OTHER
 ================================================== */
 
- .button:hover {
+.button:hover {
+    background-color: #000;
+    color:#fff;
+    text-decoration: none;
+}
 
- }
-
- .button:active {
-
- }
+.button:active {
+    box-shadow: none;
+    top: 10px;
+    text-decoration: none;
+}
 
 .button {
-
+    margin-left: auto;
+    margin-right:auto;
+    width: 150px;
+    height: 35px;
+    padding-top: 15px;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 3px 3px 0 #1a1f2b;
+    transition: all .3s ease 0;
 }
 
 
-/* #Base 960 Grid
+/* SKELETON GRID
 ================================================== */
 
     .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }

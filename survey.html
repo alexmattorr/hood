@@ -10,24 +10,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<link rel="stylesheet" href="css/base.css">
+    <script src="js/hood.js" type="text/javascript"></script>
 
 </head>
 <body>
+
 	<div class="sixteen columns" id="topPgTwo">
 		<h5>check out the hoods here:</h5>
 
 		<ul>
-			<li><a href="#">Castro</a></li>
-			<li><a href="#">Noe Valley</a></li>
-			<li><a href="#">Twin Peaks</a></li>
-			<li><a href="#">Pacific Heights</a></li>
-			<li><a href="#">Mission</a></li>
-			<li><a href="#">Haight</a></li>
-			<li><a href="#">Sunset</a></li>
-			<li><a href="#">Richmond</a></li>
-			<li><a href="#">Portrero Hill</a></li>
-			<li><a href="#">SOMA</a></li>
-			<li><a href="#">Tenderloin</a></li>
+			<li><a href="hoods/castro.html">Castro</a></li>
+			<li><a href="hoods/nv.html">Noe Valley</a></li>
+			<li><a href="hoods/tp.html">Twin Peaks</a></li>
+			<li><a href="hoods/ph.html">Pacific Heights</a></li>
+			<li><a href="hoods/mission.html">Mission</a></li>
+			<li><a href="hoods/haight.html">Haight</a></li>
+			<li><a href="hoods/sunset.html">Sunset</a></li>
+			<li><a href="hoods/richmond.html">Richmond</a></li>
+			<li><a href="hoods/ph.html">Portrero Hill</a></li>
+			<li><a href="hoods/soma.html">SOMA</a></li>
+			<li><a href="hoods/tl.html">Tenderloin</a></li>
 		</ul>
 	</div>
 
@@ -240,5 +242,21 @@
 		</div>
 
 	</div>
+
+
+    <script type="text/javascript">
+    NodeList.prototype.forEach = Array.prototype.forEach;
+    HTMLCollection.prototype.forEach = Array.prototype.forEach;
+
+    (document.querySelectorAll('label')).forEach(function(elem) {
+        elem.addEventListener('click', function(e) {
+            var target = e.target;
+            var previousSibling = target.previousElementSibling;
+            console.log(previousSibling);
+            previousSibling.checked = true;
+        });
+    });
+
+    </script>
 </body>
 </html>

@@ -2,39 +2,8 @@
 
 /************************* WINDOW 1 ****************************/
 
-//USES A BUTTON TO OPEN WINDOW 2
-function openForm() {
-	//fill in form information
-	myForm = open('orr_alex_final_window2.html', 'Form2','height=1000 width=900');
-	myForm = moveTo(400,50);
-}
-
-
 
 /************************* WINDOW 2 ****************************/
-
-//FUNCTION TO DISPLAY CURRENT TIME
-function startTime(){
-			var toDay=new Date();
-			var h = toDay.getHours();
-			var m = toDay.getMinutes();
-			var s = toDay.getSeconds();
-			m = checkTime(m);
-			s = checkTime(s);
-			document.getElementById('txt').innerHTML=h+":"+m+":"+s;
-			t=setTimeout(function(){startTime()},500);
-		}
-		
-		function checkTime(i){
-			if (i<10)
-			{
-				i = "0" + i;
-			}
-			return i;
-		}
-		
-		
-		//
 
 //FUNCTION TO GET GROUP VALUES (RADIOS/CHECKBOXES)
 function getGroupValue(groupName) {
@@ -72,42 +41,42 @@ function calculateHood(){
 	//USERCORE / DETERMINES NEIGHBORHOOD THEY BELONG TOO!
 	if (userScore >= 200){
 		newNeighborhood = 'Castro';
-		fileName = 'hoodCASTRO.html';
+		fileName = 'hoods/castro.html';
 	} else if (userScore >= 180){
 		newNeighborhood = 'Noe Valley';
-		fileName = 'hoodNOEVALLEY.html';
+		fileName = 'hoods/nv.html';
 	} else if (userScore >= 160){
 		newNeighborhood = 'Twin Peaks';
-		fileName = 'hoodTWINPEAKS.html';
+		fileName = 'hoods/tp.html';
 	} else if (userScore >= 140) {
 		newNeighborhood = 'Pacific Heights';
-		fileName = 'hoodPACHEIGHTS.html';
+		fileName = 'hoods/ph.html';
 	} else if (userScore >= 120){
 		newNeighborhood = 'Mission';
-		fileName = 'hoodMISSION.html';
+		fileName = 'hoods/mission.html';
 	} else if (userScore >= 100){
 		newNeighborhood = 'Haight';
-		fileName = 'hoodHAIGHT.html';
+		fileName = 'hoods/haight.html';
 	} else if (userScore >= 80){
 		newNeighborhood = 'Sunset';
-		fileName = 'hoodSUNSET.html';
+		fileName = 'hoods/sunset.html';
 	} else if (userScore >= 60) {
 		newNeighborhood = 'Richmond';
-		fileName = 'hoodRICHMOND.html';
+		fileName = 'hoods/richomnd.html';
 	} else if (userScore >= 40){
 		newNeighborhood = 'Portrero Hill';
-		fileName = 'PORTRERO.html';
+		fileName = 'hoods/ph.html';
 	} else if (userScore >= 20){
 		newNeighborhood = 'SOMA';
-		fileName = 'hoodSOMA.html';
+		fileName = 'hoods/soma.html';
 	} else if (userScore >= 0){
 		newNeighborhood = 'Tenderloin';
-		fileName = 'hoodTENDERLOIN.html';
+		fileName = 'hoods/tl.html';
 	}
 
 
 	//OPENS NEIGHBOORHOOD CORESPONDING WITH USERS SCORE
-	window.open(fileName, newNeighborhood, 'height=600, width=600');
+	window.open(fileName, newNeighborhood, 'height=800, width=800');
 }
 
 
@@ -282,12 +251,3 @@ function validate() {
 		
 	}
 }
-
-
-
-
-
-
-//!!!!!!!!!!!!!!!!!!!!!!!!QUESTION FORM!!!!!!!!!!!!!!!!!!!!!!
-
-

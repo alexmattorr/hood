@@ -1,0 +1,182 @@
+
+//FINAL PSUEDOCODE
+
+FIND OUT WHAT PART OF SAN FRANCISCO YOU BELONG IN!
+		(the game)
+
+object of the game
+	have the user answer a series of questions
+	each question is assigned a numerical value
+	after the test is complete the computer will add up the users answers
+		this will then give them their corresponding neighborhood in San Francisco
+	
+
+The parts of the city are the following (along with their point range)
+	Castro 			(200-250 pts)
+	Noe Valley		(180-200 pts)
+	Twin Peaks 		(160-179 pts)
+	Pacific Heights		(140-159 pts)
+	Mission 		(120-139 pts)
+	Haight			(100-119 pts)
+	Sunset			(80-99 pts)
+	Richmond		(60-79 pts)
+	Portrero Hill		(40-59 pts)
+	SOMA			(20-39 pts)
+	Tenderloin		(0-19 pts)
+	
+
+//WINDOW 1
+
+cookie that saves user name
+
+before window opens
+	prompt user for their name (get user name)
+
+when user arrives to the page
+	greet user
+	ask user if they want to take the quiz 
+
+button that takes user to the quiz
+	take user to quiz
+
+//WINDOW 2
+
+date object that shows when they arrived on the page
+
+Menu that has all possible neighborhoods
+	neighborhoods linked to corresponding pages
+	
+	Castro
+	Noe Valley
+	Twin Peaks
+	Pacific Heights
+	Mission	
+	Haight
+	Sunset
+	Richmond
+	Portrero Hill
+	SOMA
+	Tenderloin
+	
+
+Ask the user for their gender (radio)
+	male 			(5 pts)
+	female 			(5 pts)
+	transgender 		(50 pts)
+	
+
+Ask user their sexuality preferance(radio)
+	straight 		(5 pts)
+	gay			(50 pts)
+	bi			(25 pts)
+
+Ask the user for their Ethnicity (checkboxes)
+	caucasian 		(15 pts)
+	african american 	(5 pts)
+	asian 			(10 pts)
+	hispanic 		(5 pts)
+	native			(5 pts)
+	pacific islander	(5 pts)
+	other 			(5 pts)
+	
+Ask user their alcohol beverage of choice (drop menu)
+	beer 			(5 pts)
+	craft beer 		(15 pts)
+	wine 			(25 pts)
+	tequila 		(10 pts)
+	vodka 			(15 pts)
+	rum 			(5 pts)
+	whiskey 		(15 pts)
+	mixed drink 		(20 pts)
+	other 			(10 pts)
+	none 			(-5 pts)
+
+Ask user their drug of choice (drop menu)
+	cannibas		(5 pts)
+	alcohol			(15 pts)
+	cocaine			(20 pts)
+	ecstasy			(15 pts)
+	meth			(0 pts)
+	crack			(-5 pts)
+	heroine			(-10 pts)
+	other			(-5 pts)
+	none			(15 pts)
+
+Ask the user if they are employed (radio)
+	yes			(10 pts)
+	no			(-10 pts)
+
+Ask the user if they are a student (radio)
+	yes			(5 pts)
+	no			(15 pts)
+
+Ask the user what type of job does they have (check boxes)
+	chef			(15 pts)
+	medical field		(20 pts)
+	tech			(30 pts)
+	manual labor		(5 pts)
+	business 		(25 pts)
+	government service 	(5 pts)
+	education		(10 pts)
+	arts			(10 pts)
+	other			(5 pts)
+	none			(0 pts)
+
+Ask the user if they work for a start up (radio)
+	yes			(10 pts)
+	no			(0 pts)
+
+Ask the user if they work for a non profit (radio)
+	yes			(10 pts)
+	no			(0 pts)
+
+Ask the user what type of housing they live in (drop menu)
+	mansion 		(30 pts)
+	single family home 	(25 pts)
+	loft 			(20 pts)
+	apartment 		(10pts)
+	flat 			(15 pts)
+	studio 			(5 pts)
+	in law 			(5 pts)
+	homeless 		(-10 pts)
+	
+Ask the user if they have roommates (radio)
+	yes 			(5 pts)
+	no 			(20 pts)
+
+Ask the user if they live with their parents (radio)
+	yes 			(-5 pts)
+	no 			(10 pts)
+
+
+store all user information entered
+
+have user validate form
+	run through form and make sure everything is filled out correctly
+
+have user submit form
+	open new window to final page
+
+Ask user if they would like to see their score
+	if yes open new window
+	if no do nothing
+
+
+//WINODW 3
+
+
+tell user
+	"you belong to (neighborhood) neighborhood (name)!
+
+thank user for playing
+		
+
+
+
+
+
+	
+	
+
+
+

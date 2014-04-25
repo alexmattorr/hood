@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>sf neighborhoods</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/base.css">
+    <script src="js/hoodTwo.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+	<div class="sixteen columns" id="topPgTwo">
+		<h5>check out the hoods here:</h5>
+
+		<ul>
+			<li><a href="hoods/test.html">Castro</a></li>
+			<li><a href="hoods/test.html">Noe Valley</a></li>
+			<li><a href="hoods/test.html">Twin Peaks</a></li>
+			<li><a href="hoods/test.html">Pacific Heights</a></li>
+			<li><a href="hoods/test.html">Mission</a></li>
+			<li><a href="hoods/test.html">Haight</a></li>
+			<li><a href="hoods/test.html">Sunset</a></li>
+			<li><a href="hoods/test.html">Richmond</a></li>
+			<li><a href="hoods/test.html">Portrero Hill</a></li>
+			<li><a href="hoods/test.html">SOMA</a></li>
+			<li><a href="hoods/test.html">Tenderloin</a></li>
+		</ul>
+	</div>
+
+	<div class="container">
+
+	<div id="mainPgTwo">
+
+        <form id="sfQuestions" name="sfHood" action="#" method="post">
+	<!-- QUESTION 1 -->
+		<div class="sixteen columns question">
+
+			<h4>What is your gender?</h4>
+                <input type="radio" name="sex" id="male" value="5" />
+                    <label>Male</label>
+                    <br />
+                    <input type="radio" name="sex" id="female" value="5" />
+                    <label>Female</label>
+                    <br />
+                    <input type="radio" name="sex" id="trans" value="50" />
+                    <label>Transgender</label>
+		</div>
+
+	<!-- QUESTION 2 -->
+		<div class="sixteen columns question">
+
+			<h4>Do you consider yourself</h4>
+                    <input type="radio" name="sexuality" id="straight" value="5" />
+                    <label>Heterosexual</label>
+                    <br />
+                    <input type="radio" name="sexuality" id="gay" value="50" />
+                    <label>Homosexual</label>
+                    <br />
+                    <input type="radio" name="sexuality" id="bi" value="25" />
+                    <label>Bisexual</label>
+		</div>
+
+	<!-- QUESTION 3 -->
+		<div class="sixteen columns question">
+
+			<h4>What is your ethnicity?</h4>
+                    <input type="checkbox" name="ethnic" value="15" id="caucasian" />
+                    <label>Caucasian</label>
+                    <br />
+                    <input type="checkbox" name="ethnic" value="5" id="african" />
+                    <label>African American</label>
+                    <br />
+                    <input type="checkbox" name="ethnic" value="10" id="asian" />
+                    <label>Asian</label>
+                    <br />
+                    <input type="checkbox" name="ethnic" value="5" id="hispanic" />
+                    <label>Hispanic</label>
+                    <br />
+                    <input type="checkbox" name="ethnic" value="5" id="nativeA" />
+                    <label>Native American</label>
+                    <br />
+                    <input type="checkbox" name="ethnic" value="5" id="pac" />
+                    <label>Pacific Islander</label>
+                    <br />
+                    <input type="checkbox" name="ethnic" value="5" id="raceOther" />
+                    <label>Other</label>
+		</div>
+
+	<!-- QUESTION 4 -->
+		<div class="sixteen columns question">
+
+			<h4>What is your favorite alcoholic beverage?</h4>
+            			<select name="drink" onchange="alcoholChange(this);">
+            				<option value="">Select One:</option>
+                			<option name="beer" value="5">Beer</option>
+                			<option name="craftBeer" value="15">Craft Beer</option>
+                			<option name="wine" value="25">Wine</option>
+                			<option name="tequila" value="10">Tequila</option>
+                			<option name="vodka" value="15">Vodka</option>
+                			<option name="rum" value="5">Rum</option>
+                			<option name="whiskey" value="15">Whiskey</option>
+                			<option name="mixedDrink" value="20">Mixed Drink</option>
+                			<option name="drinkOther" value="10">Other</option>
+                			<option name="drinkNone" value="-5">None</option>
+                        </select>
+		</div>
+
+	<!-- QUESTION 5 -->
+		<div class="sixteen columns question">
+
+			<h4>What is your favorite drug?</h4>
+                    	<select name="drug" onchange="drugChange(this);">
+            				<option value="">Select One:</option>
+                			<option name="weed" value="5">Cannibas</option>
+                			<option name="alcohol" value="15">Alcohol</option>
+                			<option name="coke" value="20">Cocaine</option>
+                			<option name="ex" value="15">Ecstacy</option>
+                			<option name="meth" value="0">Meth</option>
+                			<option name="crack" value="-5">Crack</option>
+                			<option name="heroine" value="-10">Heroine</option>
+                			<option name="drugOther" value="-5">Other</option>
+                			<option name="drugNone" value="15">None</option>
+                        </select>
+		</div>
+
+	<!-- QUESTION 6 -->
+		<div class="sixteen columns question">
+
+			<h4>Are you employed?</h4>
+                    	<input type="radio" name="employ" id="employYes" value="10" />
+                    	<label>Yes</label>
+                    	<input type="radio" name="employ" id="employNo" value="-10" />
+                    	<label>No</label>
+		</div>
+
+	<!-- QUESTION 7 -->
+		<div class="sixteen columns question">
+
+			<h4>Are you a student?</h4>
+                    	<input type="radio" name="student" id="studentYes" value="5" />
+                    	<label>Yes</label>
+                    	<input type="radio" name="student" id="studentNo" value="15" />
+                    	<label>No</label>
+		</div>
+
+	<!-- QUESTION 8 -->
+		<div class="sixteen columns question">
+
+			<h4>What do you do for work?</h4>
+                    	<input type="checkbox" name="job" value="15" id="chef" />
+                    	<label>Chef</label>
+                    	<br />
+                    	<input type="checkbox" name="job" value="20" id="med" />
+                    	<label>Medical Field</label>
+                    	<br />
+                    	<input type="checkbox" name="job" value="30" id="tech" />
+                    	<label>Tech</label>
+                    	<br />
+                    	<input type="checkbox" name="job" value="5" id="manual" />
+                    	<label>Manual Labor</label>
+                    	<br />
+                    	<input type="checkbox" name="job" value="25" id="bus" />
+                    	<label>Business</label>
+                    	<br />
+                    	<input type="checkbox" name="job" value="5" id="gov" />
+                    	<label>Government Service</label>
+                    	<br />
+                    	<input type="checkbox" name="job" value="10" id="edu" />
+                    	<label>Education</label>
+                    	<br />
+                        <input type="checkbox" name="job" value="10" id="art" />
+                    	<label>Arts</label>
+                    	<br />
+                        <input type="checkbox" name="job" value="5" id="jobOther" />
+                    	<label>Other</label>
+                    	<br />
+                        <input type="checkbox" name="job" value="-5" id="jobNone" />
+                    	<label>None</label>
+                    <br />
+		</div>
+
+	<!-- QUESTION 9 -->
+		<div class="sixteen columns question">
+
+			<h4>Do you work for a start up?</h4>
+                    	<input type="radio" name="starter" id="startYes" value="10" />
+                    	<label>Yes</label>
+                    	<input type="radio" name="starter" id="startNo" value="0" />
+                    	<label>No</label>
+		</div>
+
+	<!-- QUESTION 10 -->
+		<div class="sixteen columns question">
+			<h4>Do you work for a non profit?</h4>
+                    	<input type="radio" name="non" id="nonYes" value="10" />
+                    	<label>Yes</label>
+                    	<input type="radio" name="non" id="nonNo" value="0" />
+                    	<label>No</label>
+                    <br />
+		</div>
+
+	<!-- QUESTION 11 -->
+		<div class="sixteen columns question">
+			<h4>What type of housing do you live in?</h4>
+                    <select name="house" onchange="houseChange(this);">
+            			<option value="">Select One:</option>
+                		<option name="mansion" value="30">Mansion</option>
+                		<option name="home" value="25">Single Family Home</option>
+                		<option name="loft" value="20">Loft</option>
+                		<option name="apartment" value="10">Apartment</option>
+                		<option name="flat" value="15">Flat</option>
+                		<option name="studio" value="5">Studio</option>
+                		<option name="inLaw" value="5">In Law</option>
+                		<option name="homeless" value="-10">Homeless</option>
+                        </select>
+		</div>
+
+	<!-- QUESTION 12 -->
+		<div class="sixteen columns question">
+			<h4>Do you live with roommates?</h4>
+                    	<input type="radio" name="mates" id="matesYes" value="5" />
+                    	<label>Yes</label>
+                    	<input type="radio" name="mates" id="matesNo" value="20 "/>
+                    	<label>No</label>
+		</div>
+
+	<!-- QUESTION 13 -->
+		<div class="sixteen columns question">
+				<div class="validate">
+            			<input type="button" value="Click When Finished!" onclick="validate();" />
+           		</div>
+
+		</div>
+        </form>
+	</div>
+
+<!--
+    <script type="text/javascript">
+    NodeList.prototype.forEach = Array.prototype.forEach;
+    HTMLCollection.prototype.forEach = Array.prototype.forEach;
+
+    (document.querySelectorAll('label')).forEach(function(elem) {
+        elem.addEventListener('click', function(e) {
+            var target = e.target;
+            var previousSibling = target.previousElementSibling;
+            console.log(previousSibling);
+            previousSibling.checked = true;
+        });
+    });
+-->
+    </script>
+</body>
+</html>

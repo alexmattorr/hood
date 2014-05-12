@@ -142,18 +142,22 @@ function validate() {
 	var form = document.sfHood;
 	console.log(sfHood.elements);
 
+
+	//Q1
 	if(!form.elements.sex.value){
 		//sex validation
-		alert('enter your sex!');
+		document.getElementById('qOneError').innerHTML = 'Please select your sex!';
 		errors = true;
 	}
 
+	//Q2
 	if(!form.elements.sexuality.value){
 		//sexuality validation
-		alert('enter you sexual preference!');
+		document.getElementById('qTwoError').innerHTML = 'Please select your sexual preference!';
 		errors = true;
 	}
 
+	//Q3
 	var ethnicBox = document.sfHood.elements['ethnic'];
 	var ethnicChecked = 0;
 		//ETHNICITY VALIDATION
@@ -165,32 +169,37 @@ function validate() {
 
 	if (!ethnicChecked){
 		//alerts user to check their ethnicity
-		alert('pick your ethnicity!');
+		document.getElementById('qThreeError').innerHTML = 'Please select your ethnicity!';
 		errors = true;
 	}
 
+	//Q5
 	if(!form.elements.drug.value){
 		//drink vaidation
-		alert('select your favorite drink!');
+		document.getElementById('qFiveError').innerHTML = 'Please select your drug of choice!';
 		errors = true;
 	}
 
+	//Q4
 	if(!form.elements.drink.value){
 		//drug validation
-		alert('select your favorite drug!');
+		document.getElementById('qFourError').innerHTML = 'Please select your alcohol of choice!';
 	}
 
+	//Q6
 	if(!form.elements.employ.value){
 		//employement validation
-		alert('enter if you are employed!');
+		document.getElementById('qSixError').innerHTML = 'Please select if you are employed!';
 		errors = true;
 	}
 
+	//Q7
 	if(!form.elements.student.value){
 		//student validation
-		alert('enter if you are a student!')
+		document.getElementById('qSevenError').innerHTML = 'Please select if you are a student!';
 	}
 
+	//Q8
 	var jobBox = document.sfHood.elements['job'];
 	var jobChecked = 0;
 		//JOB VALIDATION
@@ -202,37 +211,41 @@ function validate() {
 
 	if (!jobChecked){
 		//alerts user to check their job
-		alert('enter in where you work!');
+		document.getElementById('qEightError').innerHTML = 'Please select your profession!';
 		errors = true;
 	}
 
+	//Q9
 	if(!form.elements.starter.value){
 		//start up validation
-		alert('enter if you work at a start up');
+		document.getElementById('qNineError').innerHTML = 'Please select if work for a start up!';
 		errors = true;
 	}
 
+	//Q10
 	if(!form.elements.non.value){
 		//non profit validation
-		alert('enter if you work for a non profit');
+		document.getElementById('qTenError').innerHTML = 'Please select if you work for a non profit!';
 		errors = true;
 	}
 
+	//Q11
 	if(!form.elements.house.value){
 		//housing validation
-		alert('enter what type of housing you live in');
+		document.getElementById('qElevenError').innerHTML = 'Please select your housing!';
 		errors = true;
 	}
 
+	//Q12
 	if(!form.elements.mates.value){
 		//roommates validation
-		alert('enter in if you live with roommates!');
+		document.getElementById('qTwelveError').innerHTML = 'Please select if you live with roommates!';
 		errors = true;
 	}
 
 	if(!form.elements.parents.value){
 		//parents validation
-		alert('enter in if you live with your parents!');
+		document.getElementById('qThirteenError').innerHTML = 'Please select if you live with your parents!';
 		errors = true;
 	}
 		//IF ALL PERAMETERS ARE NOT MET ALERTS USER TO FILL THEM OUT

@@ -41,7 +41,7 @@
             <!-- QUESTION 1 -->
             <section class="sixteen columns">
                 <h2>Q1. <span>What is your sex?</span></h2>
-
+                    <div id="qOneError" class="errorMsg"></div>
                 <article>
                     <input type="radio" name="sex" id="male" value="5" />
                         <label>male</label><br />
@@ -56,7 +56,7 @@
             <!-- QUESTION 2 -->
             <section class="sixteen columns">
                 <h2>Q2. <span>What is your sexual preference?</span></h2>
-
+                    <div id="qTwoError" class="errorMsg"></div>
                 <article>
                         <input type="radio" name="sexuality" id="straight" value="5" />
                             <label>heterosexual</label><br />
@@ -71,7 +71,7 @@
             <!-- QUESTION 3 -->
             <section class="sixteen columns">
                 <h2>Q3. <span>What is your race?</span></h2>
-
+                    <div id="qThreeError" class="errorMsg"></div>
                 <article>
                     <input type="checkbox" name="ethnic" value="15" id="caucasian" />
                         <label>caucasian</label><br />
@@ -93,7 +93,7 @@
             <!-- QUESTION 4 -->
             <section class="sixteen columns">
                 <h2>Q4. <span>What is your favorite alcoholic beverage?</span></h2>
-
+                    <div id="qFourError" class="errorMsg"></div>
                 <article class="styled-select">
         	       <select name="drink" onchange="alcoholChange(this);">
         		      <option value="">select one:</option>
@@ -115,7 +115,7 @@
             <!-- QUESTION 5 -->
             <section class="sixteen columns">
                 <h2>Q5. <span>What is your favorite drug?</span></h2>
-
+                    <div id="qFiveError" class="errorMsg"></div>
                 <article class="styled-select">
         	       <select name="drug" onchange="drugChange(this);">
         		      <option value="">select one:</option>
@@ -136,7 +136,7 @@
             <!-- QUESTION 6 -->
             <section class="sixteen columns">
                 <h2>Q6. <span>Are you employed?</span></h2>
-
+                    <div id="qSixError" class="errorMsg"></div>
                 <article>
         	       <input type="radio" name="employ" id="employYes" value="10" />
         	           <label>yes</label><br />
@@ -149,7 +149,7 @@
             <!-- QUESTION 7 -->
             <section class="sixteen columns">
                 <h2>Q7. <span>Are you a student?</span></h2>
-
+                    <div id="qSevenError" class="errorMsg"></div>
                 <article>
         	       <input type="radio" name="student" id="studentYes" value="5" />
         	           <label>yes</label><br />
@@ -162,7 +162,7 @@
             <!-- QUESTION 8 -->
             <section class="sixteen columns">
                 <h2>Q8. <span>What is your profession?</span></h2>
-
+                    <div id="qEightError" class="errorMsg"></div>
                 <article>
         	       <input type="checkbox" name="job" value="15" id="chef" />
         	          <label>chef</label><br />
@@ -191,7 +191,7 @@
             <!-- QUESTION 9 -->
             <section class="sixteen columns">
                 <h2>Q9. <span>Do you work for a start up?</span></h2>
-
+                    <div id="qNineError" class="errorMsg"></div>
                 <article>
         	       <input type="radio" name="starter" id="startYes" value="10" />
         	           <label>yes</label><br />
@@ -204,7 +204,7 @@
             <!-- QUESTION 10 -->
             <section class="sixteen columns">
                 <h2>Q10. <span>Do you work for a non profit?</span></h2>
-
+                    <div id="qTenError" class="errorMsg"></div>
                 <article>
         	       <input type="radio" name="non" id="nonYes" value="10" />
         	           <label>yes</label><br />
@@ -217,7 +217,7 @@
             <!-- QUESTION 11 -->
             <section class="sixteen columns">
                 <h2>Q11. <span>What type of housing do you live in?</span></h2>
-
+                    <div id="qElevenError" class="errorMsg"></div>
                 <article class="styled-select">
         	       <select name="house" onchange="houseChange(this);">
         		      <option value="">select one:</option>
@@ -236,7 +236,7 @@
             <!-- QUESTION 12 -->
             <section class="sixteen columns">
                 <h2>Q12. <span>Do you live with roommates?</span></h2>
-
+                    <div id="qTwelveError" class="errorMsg"></div>
                 <article>
         	       <input type="radio" name="mates" id="matesYes" value="5" />
         	           <label>yes</label><br />
@@ -248,7 +248,7 @@
             <!-- QUESTION 13 -->
             <section class="sixteen columns">
                 <h2>Q13. <span>Do you live with your parents?</span></h2>
-
+                    <div id="qThirteenError" class="errorMsg"></div>
                 <article>
         	       <input type="radio" name="parents" id="parentsYes" value="-5" />
         	           <label>yes</label><br />
@@ -257,13 +257,15 @@
                 </article>
             </section>            
             
-            <!-- Validation -->
+    </div>
+</div>
+
+<!-- Validation -->
             <section class="sixteen columns" id="val">
                 <input type="button" value="Click When Finished!" onclick="validate();" />
             </section>
         </form>
-    </div>
-</div>
+        
 <script type="text/javascript">
     NodeList.prototype.forEach = Array.prototype.forEach; 
 HTMLCollection.prototype.forEach = Array.prototype.forEach;

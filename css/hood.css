@@ -100,6 +100,22 @@ header h1 {
     color: #141010;
 }
 
+#val {
+    background-color: #D14109;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.errorMsg {
+    margin:10px 0 10px 15%;
+    color:#D14109;
+    font-size:14px;
+    font-weight:bold;
+    line-height:20pt;
+}
+
+
 /* CUSTOM WEBFORMS
 ================================================== */
 label {
@@ -177,6 +193,19 @@ input[type=checkbox]:checked + label:before {
    overflow: hidden;
    background: url(../img/select_arrow.jpg) no-repeat right #fff;
    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+input[type=button] {
+    padding: 10px 15px 11px !important;
+    font-size: 18px !important;
+    background-color: #FFF;
+    font-weight: bold;
+    color: #D14109;
+    border: 1px solid #D14109;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 
 /* SKELETON GRID

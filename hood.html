@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>What part of San Francisco do you belong in?</title>
-    <link rel="stylesheet" href="hood.css">
+    <title>SF Quiz</title>
+    <link rel="stylesheet" href="css/hood.css">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
@@ -92,11 +92,11 @@
     
             <!-- QUESTION 4 -->
             <section class="sixteen columns">
-                <h2>Q4. <span>What is your favorite alcoholic beverage</span></h2>
+                <h2>Q4. <span>What is your favorite alcoholic beverage?</span></h2>
 
-                <article>
+                <article class="styled-select">
         	       <select name="drink" onchange="alcoholChange(this);">
-        		      <option value="">select One:</option>
+        		      <option value="">select one:</option>
         		      <option name="beer" value="5">beer</option>
         		      <option name="craftBeer" value="15">craft Beer</option>
         		      <option name="wine" value="25">wine</option>
@@ -116,9 +116,9 @@
             <section class="sixteen columns">
                 <h2>Q5. <span>What is your favorite drug?</span></h2>
 
-                <article>
+                <article class="styled-select">
         	       <select name="drug" onchange="drugChange(this);">
-        		      <option value="">select One:</option>
+        		      <option value="">select one:</option>
         		      <option name="weed" value="5">cannibas</option>
         		      <option name="alcohol" value="15">alcohol</option>
         		      <option name="coke" value="20">cocaine</option>
@@ -161,7 +161,7 @@
     
             <!-- QUESTION 8 -->
             <section class="sixteen columns">
-                <h2>Q8. <span>What is your profession</span></h2>
+                <h2>Q8. <span>What is your profession?</span></h2>
 
                 <article>
         	       <input type="checkbox" name="job" value="15" id="chef" />
@@ -218,9 +218,9 @@
             <section class="sixteen columns">
                 <h2>Q11. <span>What type of housing do you live in?</span></h2>
 
-                <article>
+                <article class="styled-select">
         	       <select name="house" onchange="houseChange(this);">
-        		      <option value="">select One:</option>
+        		      <option value="">select one:</option>
         		      <option name="mansion" value="30">mansion</option>
         		      <option name="home" value="25">single family home</option>
         		      <option name="loft" value="20">loft</option>
@@ -247,7 +247,7 @@
             
             <!-- QUESTION 13 -->
             <section class="sixteen columns">
-                <h2>Q13. <span>Do you live with your parents</span></h2>
+                <h2>Q13. <span>Do you live with your parents?</span></h2>
 
                 <article>
         	       <input type="radio" name="parents" id="parentsYes" value="-5" />
@@ -264,6 +264,19 @@
         </form>
     </div>
 </div>
-<script src="hood.js" ></script>
+<script type="text/javascript">
+    NodeList.prototype.forEach = Array.prototype.forEach; 
+HTMLCollection.prototype.forEach = Array.prototype.forEach;
+
+(document.querySelectorAll('label')).forEach(function(elem){
+    elem.addEventListener('click', function(e){
+        var target = e.target;
+        var previousSibling = target.previousElementSibling;
+        console.log(previousSibling);
+        previousSibling.checked = true;
+    });
+});
+</script>
+<script src="js/hood.js" ></script>
 </body>
 </html>

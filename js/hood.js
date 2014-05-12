@@ -34,37 +34,37 @@ function calculateHood(){
 	//USERCORE / DETERMINES NEIGHBORHOOD THEY BELONG TOO!
 	if (userScore >= 200){
 		newNeighborhood = 'Castro';
-		fileName = 'hoods/test.html';
+		fileName = 'hoods/castro.html';
 	} else if (userScore >= 180){
 		newNeighborhood = 'Noe Valley';
-		fileName = 'hoods/test.html';
+		fileName = 'hoods/noe.html';
 	} else if (userScore >= 160){
 		newNeighborhood = 'Twin Peaks';
-		fileName = 'hoods/test.html';
+		fileName = 'hoods/twin.html';
 	} else if (userScore >= 140) {
 		newNeighborhood = 'Pacific Heights';
-		fileName = 'hoods/test.html';
+		fileName = 'hoods/pac.html';
 	} else if (userScore >= 120){
 		newNeighborhood = 'Mission';
-		fileName = 'hoods/test.html';
+		fileName = 'hoods/mission.html';
 	} else if (userScore >= 100){
 		newNeighborhood = 'Haight';
-		fileName = 'hoods/test.html';
+		fileName = 'hoods/haight.html';
 	} else if (userScore >= 80){
 		newNeighborhood = 'Sunset';
-		fileName = 'hoods/test.html';
+		fileName = 'hoods/sunset.html';
 	} else if (userScore >= 60) {
 		newNeighborhood = 'Richmond';
-		fileName = 'hoods/test.html';
+		fileName = 'hoods/richmond.html';
 	} else if (userScore >= 40){
 		newNeighborhood = 'Portrero Hill';
-		fileName = 'hoods/test.html';
+		fileName = 'hoods/port.html';
 	} else if (userScore >= 20){
 		newNeighborhood = 'SOMA';
-		fileName = 'hoods/test.html';
+		fileName = 'hoods/soma.html';
 	} else if (userScore >= 0){
 		newNeighborhood = 'Tenderloin';
-		fileName = 'hoods/test.html';
+		fileName = 'hoods/tender.html';
 	}
 
 
